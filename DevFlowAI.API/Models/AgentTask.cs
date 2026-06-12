@@ -1,7 +1,9 @@
-﻿namespace DevFlowAI.API.Models;
+﻿using System.ComponentModel.DataAnnotations;
+namespace DevFlowAI.API.Models;
 
 public class AgentTask
 {
+    [Key]
     public int TaskId { get; set; }
 
     public int ProjectId { get; set; }
