@@ -19,7 +19,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="DTOs\" />
     <Folder Include="Band\" />
-    <Folder Include="Agents\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
