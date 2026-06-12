@@ -15,7 +15,7 @@ Modern software development requires coordination between multiple stakeholders 
 Traditional AI tools operate as isolated assistants and cannot effectively coordinate complex software delivery workflows involving multiple stages, reviews, and approvals.
 
 DevFlow AI addresses this challenge by creating a collaborative multi-agent environment where agents communicate through Band and collectively drive the software development lifecycle.
-
+its tto bad
 ---
 
 ## Key Features
