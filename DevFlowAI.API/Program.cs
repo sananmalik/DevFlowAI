@@ -1,5 +1,6 @@
-using DevFlowAI.API.Data;
 using DevFlowAI.API.Agents;
+using DevFlowAI.API.Data;
+using DevFlowAI.API.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 builder.Services.AddScoped<ProductManagerAgent>();
+
+builder.Services.AddScoped<ArchitectAgent>();
+
+builder.Services.AddScoped<WorkflowService>();
 
 var app = builder.Build();
 
