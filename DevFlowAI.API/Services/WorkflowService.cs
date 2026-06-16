@@ -1,4 +1,6 @@
 ﻿using DevFlowAI.API.Agents;
+using DevFlowAI.API.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace DevFlowAI.API.Services
 {
@@ -6,13 +8,25 @@ namespace DevFlowAI.API.Services
     {
         private readonly ProductManagerAgent _pm;
         private readonly ArchitectAgent _architect;
+        private readonly DeveloperAgent _developer;
+        private readonly QAAgent _qa;
+        private readonly ReleaseAgent _release;
+        private readonly ApplicationDbContext _context;
 
         public WorkflowService(
-            ProductManagerAgent pm,
-            ArchitectAgent architect)
+               ProductManagerAgent pm,
+               ArchitectAgent architect,
+               DeveloperAgent developer,
+               QAAgent qa,
+               ReleaseAgent release,
+               ApplicationDbContext context)
         {
-            _pm = pm;
-            _architect = architect;
+               _pm = pm;
+               _architect = architect;
+               _developer = developer;
+               _qa = qa;
+               _release = release;
+               _context = context;
         }
 
         public async Task<object> RunWorkflow(string projectDescription)
@@ -22,6 +36,15 @@ namespace DevFlowAI.API.Services
 
             var architectOutput =
                 await _architect.ExecuteAsync(pmOutput);
+
+            var developerOutput =
+                await _developer.ExecuteAsync(architectOutput);
+
+            var qaOutput =
+                await _qa.ExecuteAsync(developerOutput);
+
+            var releaseOutput =
+                await _release.ExecuteAsync(qaOutput);
 
             return new
             {

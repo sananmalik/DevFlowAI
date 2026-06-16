@@ -25,6 +25,12 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<DeveloperAgent>();
+
+builder.Services.AddScoped<QAAgent>();
+
+builder.Services.AddScoped<ReleaseAgent>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
