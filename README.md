@@ -24,7 +24,7 @@ Receives project requirements from the user and:
 - Creates functional requirements
 - Generates feature lists
 
-The output is published to Band.
+The output is published to Band
 
 ### Architect Agent
 Designs the technical solution by:
