@@ -1,6 +1,6 @@
 # DevFlow AI
 
-DevFlow AI is an autonomous multi-agent software development platform that simulates a complete software company using AI agents. Instead of relying on a single AI assistant, DevFlow AI creates a team of specialized agents that collaborate through **Band** to transform a software idea into an approved development plan..
+DevFlow AI is an autonomous multi-agent software development platform that simulates a complete software company using AI agents. Instead of relying on a single AI assistant, DevFlow AI creates a team of specialized agents that collaborate through **Band** to transform a software idea into an approved development plan.
 
 The project demonstrates real agent-to-agent communication, structured task handoffs, collaborative decision-making, and workflow orchestration.
 
