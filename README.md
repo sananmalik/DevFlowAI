@@ -4,7 +4,7 @@ DevFlow AI is an autonomous multi-agent software development platform that simul
 
 The project demonstrates real agent-to-agent communication, structured task handoffs, collaborative decision-making, and workflow orchestration.
 
-## The Problem
+## The Problem..
 
 Software development involves multiple stakeholders: Product Managers, Software Architects, Developers, QA Engineers, and Release Managers. Each performs different responsibilities and passes work to the next stage.
 
