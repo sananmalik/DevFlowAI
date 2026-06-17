@@ -20,7 +20,7 @@ DevFlow AI creates a virtual software company. Each agent has a specific role an
 Receives project requirements from the user and:
 - Analyzes user requirements
 - Identifies business objectives
-- Defines project scope
+- Defines project scop
 - Creates functional requirements
 - Generates feature lists
 
