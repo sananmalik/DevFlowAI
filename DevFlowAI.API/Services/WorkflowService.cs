@@ -32,7 +32,7 @@ namespace DevFlowAI.API.Services
         public async Task<object> RunWorkflow(string projectDescription)
         {
             var pmOutput =
-                await _pm.ExecuteAsync(projectDescription);
+               await _pm.ExecuteAsync(projectDescription);
 
             var architectOutput =
                 await _architect.ExecuteAsync(pmOutput);
@@ -49,7 +49,10 @@ namespace DevFlowAI.API.Services
             return new
             {
                 ProductManager = pmOutput,
-                Architect = architectOutput
+                Architect = architectOutput,
+                Developer = developerOutput,
+                QA = qaOutput,
+                Release = releaseOutput
             };
         }
     }
