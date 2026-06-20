@@ -30,7 +30,7 @@ The output is published to Band.
 Designs the technical solution by:
 - Analyzing requirements
 - Designing system architecture
-- Selecting technologies
+- Selecting technologiess
 - Defining APIs
 - Designing the database schema
 
